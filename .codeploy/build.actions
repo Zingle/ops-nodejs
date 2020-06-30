@@ -1,0 +1,5 @@
+make
+make-test
+portable
+portable-npm-install
+portable-publish

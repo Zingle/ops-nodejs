@@ -1,0 +1,11 @@
+[Unit]
+Requires=ops-nodejs@6001.service
+After=ops-nodejs@6001.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/node -e 'console.log("default service listener");'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,28 @@
+{
+  "name": "@zingle/ops-nodejs",
+  "version": "0.0.1",
+  "description": "Node.js test project for Zingle ops",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Zingle/ops-nodejs.git"
+  },
+  "author": "Richard Remer <reanjr@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zingle/ops-nodejs/issues"
+  },
+  "homepage": "https://github.com/Zingle/ops-nodejs#readme",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^8.0.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "systemd": "^0.3.1",
+    "tlsopt": "^2.1.0"
+  }
+}

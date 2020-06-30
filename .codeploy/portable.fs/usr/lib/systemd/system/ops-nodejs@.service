@@ -1,0 +1,11 @@
+[Unit]
+PartOf=ops-nodejs.service
+Requires=ops-nodejs@%i.socket
+After=ops-nodejs@%i.socket
+
+[Service]
+ExecStart=/usr/bin/node /usr/local/ops-nodejs/server.js
+User=nobody
+
+[Install]
+WantedBy=multi-user.target
