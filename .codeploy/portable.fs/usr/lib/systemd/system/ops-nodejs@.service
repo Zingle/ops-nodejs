@@ -4,6 +4,7 @@ Requires=ops-nodejs@%i.socket
 After=ops-nodejs@%i.socket
 
 [Service]
+Environment=NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt
 ExecStart=/usr/bin/node /usr/local/ops-nodejs/server.js
 User=nobody
 
